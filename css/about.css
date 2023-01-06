@@ -1,0 +1,29 @@
+.about img {
+  width: 300px;
+  transition: .2s;
+}
+
+.about img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Responsive Breakpoint */
+/* === Tablet === */
+@media screen and (max-width: 992px) {
+  .about img {
+    width: 50%;
+  }
+  
+  .about img:hover {
+    transform: unset;
+  }
+}
+
+
+/* === Mobile Phone === */
+@media screen and (max-width: 576px) {
+  .about img {
+    width: 60%;
+  }
+}

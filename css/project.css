@@ -1,0 +1,16 @@
+.projects .list-group, .projects .scrollspy-example {
+  height: 500px;
+}
+
+.projects .scrollspy-example {
+  overflow-y: scroll;
+}
+
+
+/* Responsive Breakpoint */
+@media screen and (max-width: 992px) {
+  .projects .scrollspy-example {
+    height: unset;
+    overflow-y: unset;
+  }
+}

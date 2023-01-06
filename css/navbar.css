@@ -1,0 +1,80 @@
+.navbar {
+  transition: .2s;
+}
+
+.navbar.scroll {
+  background-color: #dbd5ed;
+  box-shadow: 0 1px 10px black;
+}
+
+.navbar .navbar-brand {
+  font-family: 'sranger';
+}
+
+.navbar .social-media .nav-item svg, .navbar .social-media .nav-item a:after {
+  fill: #666;
+  color: #666;
+  transition: .4s;
+}
+
+.navbar .social-media .nav-item a:hover::after, .navbar .social-media .nav-item a:hover svg {
+  fill: #000;
+  color: #000;
+}
+
+
+
+/* Responsive Breakpoint */
+/* === Tablet === */
+@media screen and (max-width: 992px) {
+  .navbar .social-media .nav-item a::after {
+    margin-left: 10px;
+  }
+
+  .navbar .social-media .nav-item:nth-child(1) a::after {
+    content: 'Intagram';
+  }
+  
+  .navbar .social-media .nav-item:nth-child(2) a::after {
+    content: 'Facebook';
+  }
+  
+  .navbar .social-media .nav-item:nth-child(3) a::after {
+    content: 'GitHub';
+  }
+}
+
+
+/* === Mobile Phone === */
+@media screen and (max-width: 576px) {
+  .navbar .navbar-brand {
+    font-size: 35px!important;
+  }
+
+  .navbar .offcanvas {
+    width: 80%;
+    height: 53.5vh;
+    top: 10px;
+    right: 5px;
+    border-radius: 20px;
+  }
+}
+
+
+/* === Mini Mobile Phone === */
+@media screen and (max-width: 320px) {
+  .navbar .navbar-brand {
+    font-size: 30px!important;
+  }
+
+  .navbar .offcanvas {
+    top: 0;
+    right: 0;
+    height: 100vh;
+    border-radius: 0!important;
+  }
+
+  .navbar .offcanvas .nav.social-media {
+    flex-direction: column!important;
+  }
+}

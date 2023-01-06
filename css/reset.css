@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'sranger';
+  src: url('../media/spaceranger.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../media/Roboto-Regular.ttf') format('truetype');
+}
+
+p, a, h1, h2, h3, h4, h5, h6, ::after {
+  font-family: 'roboto';
+}
+
+.about, .projects, .contact {
+  padding: 7rem 0 2rem;
+}
+
+
+/* responsive Breakpoint */
+/* === Tablet === */
+@media screen and (max-width: 992px) {
+  .about, .projects, .contact {
+    padding: 6.5rem 0 2rem;
+  }
+  
+  h2.display-6 {
+    font-size: 40px;
+  }
+}
+
+
+/* === Mini Mobile Phone === */
+@media screen and (max-width: 32px) {
+  h2.display-6 {
+    font-size: 35px;
+  }
+}

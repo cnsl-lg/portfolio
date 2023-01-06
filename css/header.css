@@ -1,0 +1,64 @@
+header {
+  padding: 5rem 0 3rem;
+  box-sizing: border-box;
+  background-image: linear-gradient(to top right, #9896f0, #fbc8d5);
+  box-shadow: inset 0 -120px 150px #ddd;
+}
+
+header .text-animation {
+  bottom: -45px;
+}
+
+header .text-animation p, header .text-animation svg {
+  animation: textScroll 1s ease infinite alternate-reverse;
+}
+
+/* == Text Scroll Animation */
+@keyframes textScroll {
+  0% {
+    color: #454545;
+    fill: #454545;
+  }
+  
+  100% {
+    color: black;
+    fill: black;
+  }
+}
+/* == Akhir Text Scroll Animation */
+
+
+/* Responsive Breakpoint */
+/* === Laptop === */
+@media screen and (max-width: 1400px) {
+  header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0s;
+  }
+}
+
+
+/* === Mobile Phone (Rotate 90deg) */
+@media screen and (max-height: 428px) and (max-width: 926px) {
+  header {
+    height: unset;
+  }
+
+  header .text-animation {
+    bottom: -20px;
+  }
+}
+
+
+/* === Mini Mobile Phone === */
+@media screen and (max-width: 320px) {
+  header {
+    height: unset;
+  }
+
+  header .text-animation {
+    bottom: -20px;
+  }
+}
